@@ -1,0 +1,12 @@
+<h1>Hello batch #970</h1>
+<p>The list of restaurants</p>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <a href="/restaurants/<%= restaurant.id %>">
+        <%= restaurant.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
